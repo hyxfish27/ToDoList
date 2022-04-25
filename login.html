@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoList</title>
+</head>
+
+<body>
+    <div class="container-login d-flex">
+        <div class="left-area text-center">
+            <img src="./images/logo.png" alt="TodoList" class="mb-3">
+            <img src="./images/1.png" alt="TodoList" class="bg-img">
+        </div>
+        <!-- Login Page -->
+        <div class="right-area login-view">
+            <p class="fz-3 mb-4 fw-700">最實用的線上代辦事項服務</p>
+            <form class="d-column">
+                <label for="login_email" class="fz-14 fw-700 mb-1">Email</label>
+                <input type="email" name="email" id="login_email" placeholder="請輸入Email" class="input fz-2 fw-500 mb-1">
+                <p class="fz-14 fw-700 text-warning">此欄位不可為空</p>
+                <label for="login_password" class="fz-14 fw-700 mt-3 mb-1">密碼</label>
+                <input type="password" name="password" id="login_password" placeholder="請輸入密碼"
+                    class="input fz-2 fw-500 mb-1">
+                <p class="fz-14 fw-700 text-warning">此欄位不可為空</p>
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-login fz-2 fw-700">
+                        登入
+                    </button>
+                    <div class="mt-4">
+                        <button type="button" class="btn btn-none fz-2 fw-700" onclick="toRegisterPage()">
+                            註冊帳號
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Register Page -->
+        <div class="right-area register-view">
+            <p class="fz-3 mb-4 fw-700">註冊帳號</p>
+            <form class="d-column">
+                <label for="register_email" class="fz-14 fw-700 mb-1">Email</label>
+                <input type="email" name="email" id="register_email" placeholder="請輸入Email"
+                    class="input fw-500 fz-2 mb-1">
+                <p class="fz-14 text-warning">此欄位不可為空</p>
+                <label for="register_name" class="fz-14 fw-700 mt-3 mb-1">您的暱稱</label>
+                <input type="text" name="name" id="register_name" placeholder="請輸入您的暱稱" class="input fz-2 mb-1">
+                <p class="fz-14 text-warning">此欄位不可為空</p>
+                <label for="register_password" class="fz-14 fw-700 mt-3 mb-1">密碼</label>
+                <input type="password" name="password" id="register_password" placeholder="請輸入密碼"
+                    class="input fw-500 fz-2 mb-1">
+                <p class="fz-14 text-warning">此欄位不可為空</p>
+                <label for="register_password_check" class="fz-14 fw-700 mt-3 mb-1">再次輸入密碼</label>
+                <input type="password" name="password" id="register_password_check" placeholder="請輸入密碼"
+                    class="input fw-500 fz-2 mb-1">
+                <p class="fz-14 text-warning">此欄位不可為空</p>
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-register fw-700 fz-2">
+                        註冊帳號
+                    </button>
+                    <div class="mt-4">
+                        <button type="button" class="btn btn-none fz-2 fw-700" onclick="toLoginPage()">
+                            登入
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
